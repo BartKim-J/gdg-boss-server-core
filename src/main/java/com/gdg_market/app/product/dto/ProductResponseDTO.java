@@ -3,16 +3,18 @@ package com.gdg_market.app.product.dto;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
 public class ProductResponseDTO {
-    private Long id;
-    private String name;
-    private String imageURL;
+    private Long id; // 상품 ID
 
-    public ProductResponseDTO(Long id, String name, String imageURL) {
-        this.id = id;
-        this.name = name;
-        this.imageURL = imageURL;
-    }
+    private String name; // 상품명
+    private String imageURL; // 이미지 URL
+    private long price; //
+    private String description; // 설명
+
+    private LocalDateTime createdAt; // 생성일시
+    private LocalDateTime modifiedAt; // 수정일시
 }

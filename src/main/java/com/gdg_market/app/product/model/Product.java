@@ -1,6 +1,6 @@
 package com.gdg_market.app.product.model;
 
-import com.gdg_market.app.utils.model.BaseModel;
+import com.gdg_market.app.bible.model.BaseModel;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,7 +14,7 @@ public class Product extends BaseModel {
     @Column(name = "name", length = 256)
     private String name;
 
-    @Column(name = "image_url", length = 512)
+    @Column(name = "image_url", length = 2048)
     private String imageURL;
 
     @Column(name = "price")
@@ -22,7 +22,4 @@ public class Product extends BaseModel {
 
     @Column(name = "description")
     private String description;
-
-    @Column(name = "status")
-    private String status;
 }
